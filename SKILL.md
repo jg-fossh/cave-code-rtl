@@ -2,25 +2,23 @@
 name: cave-code-rtl
 description: |
   RTL Code token compressor that makes prompts smaller and consume less tokens. Use when: (1) Analyzing code files, (2) Updating existing code files, (3) Consolidating multiple code files, (4) When learning a new codebase.
-author: jg-fossh@gmail.com
-version: 0.0.1
 license: MIT
-platforms: [linux, macos, windows]
+platforms: ['linux', 'macos', 'windows']
+tags: ['cave', 'code', 'rtl', 'compress', 'token', 'cross-platform']
 metadata:
-    tags: [cave, code, rtl, compress, token, cross-platform]
-    related_skills: [claude-code, hermes-agent, copilot]
-prerequisites:
-    commands: [bash, python]
-allowed-tools:
-  - bash
-  - read
-  - write
+    author: jg-fossh@gmail.com
+    version: 0.0.2
+    source: https://github.com/jg-fossh/cave-code-rtl
+
 ---
 
-# Cave Code
+# Cave Code RTL
 
 Compress code by removing comments and spaces. RTL Code token compressor that makes prompts smaller and consume less tokens. Use when: (1) Analyzing code files, (2) Updating existing code files, (3) Consolidating multiple code files, (4) When learning a codebase.
 
+## When to use this skill
+
+Trigger this skill when you are asked for it or when you are going to read whole projects with lots of rtl files that you will use only as examples and do not intend to modify in your session or taks.
 
 ## Workflow Checklist
 
@@ -32,16 +30,28 @@ Copy and check off as you progress:
 
 ## Quick Start
 
-For single files:
+**Single file:**
 
-```bash
-python scripts/main.py /<path>/<base>.<extension>
+```powershell
+# Windows
+python scripts\main.py "**:\path\to\document.*"
 ```
 
-For a directory:
+```bash
+# macOS / Linux
+python scripts/main.py "/path/to/document.*"
+```
+
+**A directory(batch mode):**
+
+```powershell
+# Windows
+python scripts\main.py "**:\path\to\directory.*"
+```
 
 ```bash
-python scripts/main.py /<sources>/<path>
+# macOS / Linux
+python scripts/main.py "/path/to/directory"
 ```
 
 After the python script finishes `read` the compressed files. These contain `compressed` in their name.

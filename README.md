@@ -1,7 +1,7 @@
 # Cave Code RTL
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Version](https://img.shields.io/badge/Version-0.0.1-yellow.svg)
+![Version](https://img.shields.io/badge/Version-0.0.2-yellow.svg)
 
 **Stop wasting precious tokens and filling that context window.**
 
@@ -27,7 +27,7 @@ Simply copy into your skills directory(e.g. .github/skills/code-code-rtl)
 
 ```bash
 # Clone the repository
-cd your/project/path
+cd /path/to/your/project/.github/skills/
 git clone https://github.com/goncalovelosa/cave-code-rtl.git
 ```
 
@@ -78,4 +78,3 @@ Real example files in `references/examples/`
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
